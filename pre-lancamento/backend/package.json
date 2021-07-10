@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start":"nodemon ./index.js",
-    "it":"knex init",
-    "ctbl":"knex migrate:make create_table_products",
-    "lt":"knex migrate:latest",
-    "rlbck":"knex migrate:rolback"
+    "it":"knex init"
   },
   "keywords": [],
   "author": "",
