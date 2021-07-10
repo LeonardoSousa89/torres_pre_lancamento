@@ -1,0 +1,22 @@
+design/ui/ux:
+	https://themeforest.net/category/ecommerce
+	https://pixabay.com/pt/
+	https://themeforest.net/category/site-templates
+	https://pt.squarespace.com/templates/navegar/topica/designs-populares/tipo/associacoes&Loja-on-line
+
+
+
+Catálogo dos Padrões de Projeto
+-------------------------------
+https://refactoring.guru/pt-br/design-patterns/catalog
+
+devOps/infra:
+
+heroku
+------
+https://www.heroku.com/
+
+
+netlify
+-------
+https://www.netlify.com/
