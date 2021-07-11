@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+			
+			body{
+    max-height: 110%;
+    width: 100%;
+
+    margin: 0;
+}
+.header{
+    grid-area: header;
+
+    padding: 0.5em;
+}
+.btnheader{
+    margin-bottom: 5em;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2em;
+}
+.form{
+    margin: 1em 0;
+}
+.main{
+    grid-area: main;
+
+    padding: 1em;
+}
+#id{
+    width: 20vw;
+}
+#enviar,
+#limpar,
+#edt,
+#atualizar,
+#excluir,
+#consultarid,
+#limpar,
+#normal
+{
+    margin: 0 0.2em;
+}
+#edit{
+   display: none;
+}
+#erro{
+    margin-top: 0.4em;
+    display: none;
+}
+.queryArea{
+    border: solid 1px rgba(0,0,0,0.3);
+    border-radius: 6px;
+    margin-top: 4em;
+    padding: 0.5em;
+
+    height: 260px;
+
+    overflow: scroll;
+}
+#consultageral{
+    margin-bottom: 0.5em;
+}
+.table{
+    border: solid 1px rgba(0,0,0,0.3);
+}
+.table thead{
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+}
+.table ul{
+    cursor: pointer;
+}
+.footer{
+    background-color: whitesmoke;
+    grid-area: footer;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.footer strong{
+    margin-right: 2em;
+    font-size: x-small;
+}
+.conteiner{
+    height: 150vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows:40% 75% 5%;
+    grid-template-areas: 
+        'header  header'
+        'main      main'
+        'footer  footer'
+    ;
+}
+@media screen and (max-width:850px) {
+    .conteiner{
+        display: none;
+    }
+}
+
+			
+	</style>
+    <title>torres&reg;</title>
+</head>
+<body>
+    
+    <div class="conteiner">
+
+        <div class="header">
+
+            <div class="btnheader">
+
+                <button type="button" class="btn btn-dark"  onclick="sair(Event)">sair</button>
+                <button type="button" class="btn btn-primary" id="loja" onclick="loja(Event)">loja</button>
+      
+            </div>
+
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Administração Torres&reg;</h1>
+                  <p class="lead">área de cadastro e consulta de produtos.</p>
+                </div>
+                <hr>
+              </div>
+        </div>
+
+        <div class="main">
+
+           <div class="form">
+            
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="id">
+                <label for="id">id</label>
+              </div>
+              
+              <div class="form-floating">
+                <input type="text" class="form-control" id="img">
+                <label for="img">Url da imagem</label>
+              </div>
+
+           </div>
+
+           <div class="form">
+            
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="descri">
+                <label for="descri">descrição</label>
+              </div>
+              
+              <div class="form-floating">
+                <input type="text" class="form-control" id="checkout">
+                <label for="checkout">Url do checkout</label>
+              </div>
+
+           </div>
+
+           <div id="normal">
+
+                <button type="button" class="btn btn-primary" id="enviar" onclick="">enviar</button>
+                <button type="button" class="btn btn-warning" id="limpar" onclick="limpar(Event)">limpar</button>
+                <button type="button" class="btn btn-dark"    id="edt"   onclick="modoEdicao(Event)">edit</button>
+
+           </div>
+
+           <div id="edit">
+
+            <button type="button" class="btn btn-secondary" id="atualizar" onclick="">atualizar</button>
+            <button type="button" class="btn btn-danger"    id="excluir" onclick="limpar(Event)">excluir</button>
+            <button type="button" class="btn btn-success"   id="consultarid"   onclick="">consultar id</button>
+            <button type="button" class="btn btn-warning"   id="limpar" onclick="limpar(Event)">limpar</button>
+            <button type="button" class="btn btn-dark"      id="normal"   onclick="modoNormal(Event)">modo normal</button>
+
+       </div>
+              
+
+               <div class="alert alert-danger" id="erro" role="alert">
+                 Erro ao tentar se comunicar com o servidor!
+              </div>
+
+           <div class="queryArea">
+
+            <button type="button" class="btn btn-primary" id="consultageral" onclick="consulta(Event)">consulta</button>
+            <button type="button" class="btn btn-danger" id="consultageral" onclick="limparConsulta(Event)">limpar consulta</button>
+
+
+                <table  class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th>id</th>
+                        <th>img</th>
+                        <th>desc</th>
+                        <th>checkout</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td id="idfetch"></td>
+                        <td id="imgfetch"></td>
+                        <td id="descfetch"></td>
+                        <td id="chkfetch"></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+
+           </div>
+
+        </div>
+
+        <div class="footer"><strong>&reg;2021 Torre digital possui todos os seus direitos reservados.</strong></div>
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+	
+		function sair() {
+    document.location.href = '../auth/index.html'
+}
+function loja() {
+    document.location.href = '../store/torres.html'
+}
+function limpar() {
+    let id       = document.getElementById('id')
+    let img      = document.getElementById('img')
+    let descri   = document.getElementById('descri')
+    let checkout = document.getElementById('checkout')
+
+    id.value        = ''
+    img.value       = ''
+    descri.value    = ''
+    checkout.value  = ''
+}
+function modoEdicao(){
+    let edit    = document.getElementById('edit')
+    let normal  = document.getElementById('normal')
+
+    edit.style.display = 'flex'
+    normal.style.display = 'none'
+}
+function modoNormal() {
+    let edit    = document.getElementById('edit')
+    let normal  = document.getElementById('normal')
+
+    edit.style.display = 'none'
+    normal.style.display = 'flex'
+}
+function consulta() {
+    const url = 'http://localhost:81'
+    const config = {
+        method :'GET',
+        status :200,
+        cache  :'default'
+    }
+
+    fetch(url,config)
+                .then(res => res.json())
+                .then(res => {
+                    res.map((e) =>{
+                          let idBk = e.id
+                          let idTb = document.getElementById('idfetch')
+                          let imgBk = e.img
+                          let imgTb = document.getElementById('imgfetch')
+                          let descBk = e.descri
+                          let descTb = document.getElementById('descfetch')
+                          let chkBk = e.checkout
+                          let chkTb = document.getElementById('chkfetch')
+
+                          fabricaDados(idTb,idBk)
+                          fabricaDados(imgTb,imgBk)
+                          fabricaDados(descTb,descBk)
+                          fabricaDados(chkTb,chkBk)
+                        })
+                })
+                .catch(err => {
+                    let erro = document.getElementById('erro')
+                    erro.style.display = 'flex'
+                })
+}
+function fabricaDados(posicao,e) {
+    let ul = document.createElement('ul')
+    ul.style.fontSize   = 'small'
+    ul.style.fontWeight = 'bold'
+    ul.append(e)
+    posicao.append(ul)
+}
+function limparConsulta() {
+    document.location.reload()
+}
+
+
+	
+	</script>
+</body>
+</html>

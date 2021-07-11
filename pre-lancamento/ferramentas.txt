@@ -1,9 +1,18 @@
 design/ui/ux:
+	https://themes.getbootstrap.com/
+	https://dribbble.com/shots/3829284-Dipnet-login-page
+	https://colorlib.com/wp/html5-and-css3-login-forms/
 	https://themeforest.net/category/ecommerce
 	https://pixabay.com/pt/
 	https://themeforest.net/category/site-templates
 	https://pt.squarespace.com/templates/navegar/topica/designs-populares/tipo/associacoes&Loja-on-line
 
+model choiced:
+	store:
+		https://codescandy.com/geeks-bootstrap-5/
+	
+	login:
+		https://colorlib.com/wp/template/login-form-v3/
 
 
 Catálogo dos Padrões de Projeto
