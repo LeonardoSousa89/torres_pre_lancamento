@@ -1,0 +1,4 @@
+link de resolução de problema
+de responsividade em dispositivos móveis:
+
+https://css-tricks.com/snippets/css/media-queries-for-standard-devices/

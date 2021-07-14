@@ -60,7 +60,7 @@
 
            <div id="normal">
 
-                <button type="button" class="btn btn-primary" id="enviar" onclick="">enviar</button>
+                <button type="button" class="btn btn-primary" id="enviar" onclick="enviaDados(Event)">enviar</button>
                 <button type="button" class="btn btn-warning" id="limpar" onclick="limpar(Event)">limpar</button>
                 <button type="button" class="btn btn-dark"    id="edt"   onclick="modoEdicao(Event)">edit</button>
 
@@ -68,9 +68,9 @@
 
            <div id="edit">
 
-            <button type="button" class="btn btn-secondary" id="atualizar" onclick="">atualizar</button>
-            <button type="button" class="btn btn-danger"    id="excluir" onclick="limpar(Event)">excluir</button>
-            <button type="button" class="btn btn-success"   id="consultarid"   onclick="">consultar id</button>
+            <button type="button" class="btn btn-secondary" id="atualizar" onclick="alteraDados(Event) ">atualizar</button>
+            <button type="button" class="btn btn-danger"    id="excluir" onclick="deletaDados(Event)">excluir</button>
+            <button type="button" class="btn btn-success"   id="consultarid"   onclick="obtemDadosPorId(Event)">obter id</button>
             <button type="button" class="btn btn-warning"   id="limpar" onclick="limpar(Event)">limpar</button>
             <button type="button" class="btn btn-dark"      id="normal"   onclick="modoNormal(Event)">modo normal</button>
 

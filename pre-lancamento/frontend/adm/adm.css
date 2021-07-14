@@ -94,7 +94,7 @@ body{
         'footer  footer'
     ;
 }
-@media screen and (max-width:850px) {
+@media (max-device-width:850px) {
     .conteiner{
         display: none;
     }
