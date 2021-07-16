@@ -1,7 +1,6 @@
 
-
     body{
-        max-height: 110%;
+        max-height: 150%;
         width: 100%;
     
         margin: 0;
@@ -96,7 +95,6 @@
             'footer  footer'
         ;
     }
-
 /*
 https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 }*/
@@ -118,11 +116,45 @@ https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
         height: 50%;
     }
 }
-@media only screen 
-  and (min-device-width: 640px) 
-  and (max-device-width: 641px)
-{
+@media (max-device-width:640px)
+   and (orientation:landscape) {
+    body{
+        height: 150%;
+        width: 100%;
+    
+        margin: 0;
+    }
     .conteiner{
-        display: none;
+        height: 150vh;
+        width: 100vw;
+
+        grid-template-rows:40% 105% 5%;
+    }
+    .queryArea{
+        margin-top: 10em;
+        height: 35%;
     }
 }
+@media (max-device-width:732px)
+and    (orientation:landscape) {
+    body{
+        height: 150%;
+        width: 100%;
+    
+        margin: 0;
+    }
+    .conteiner{
+        height: 150vh;
+        width: 100vw;
+
+        grid-template-rows:40% 105% 5%;
+    }
+    .queryArea{
+        margin-top: 10em;
+        height: 30%;
+    }
+}
+
+
+
+
