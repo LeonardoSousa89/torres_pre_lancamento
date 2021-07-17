@@ -1,5 +1,6 @@
 //https://auth-deploy-test.netlify.app/
 //https://adm-auth-test.netlify.app/
+//http://127.0.0.1:5500/pre-lancamento/frontend/auth/index.html
 function sair() {
     document.location.href = '../auth/index.html'
 }
@@ -73,7 +74,7 @@ function enviaDados() {
           descri == ''   || descri == null    ||
           checkout == '' || checkout == null    ) {
 
-                alert('por favor, preencha todos os canpos!')
+                alert('por favor, preencha todos os campos!')
 
        }else{
 
