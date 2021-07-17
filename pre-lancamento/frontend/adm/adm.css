@@ -133,8 +133,7 @@ https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
     .main{
         overflow: hidden;
     }
-    #id
-    {
+    #id{
         height: 100px;
         width: 10%; 
     }
@@ -155,6 +154,7 @@ https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
     {
         height: 70px;
         width: 100px;
+        
     }
     #consultageral{
         height: 70px;
