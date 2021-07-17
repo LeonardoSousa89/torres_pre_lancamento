@@ -18,6 +18,10 @@
     
         padding: 2em;
     }
+    .dropdown{
+        margin-bottom: 5em;
+        display: none;
+    }
     .form{
         margin: 1em 0;
     }
@@ -71,7 +75,8 @@
         cursor: pointer;
     }
     .footer{
-        background-color: whitesmoke;
+        background-color: black;
+        color: whitesmoke;
         grid-area: footer;
     
         display: flex;
@@ -80,7 +85,7 @@
     }
     .footer strong{
         margin-right: 2em;
-        font-size: x-small;
+        font-size: small;
     }
     .conteiner{
         height: 150vh;
@@ -98,6 +103,65 @@
 /*
 https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 }*/
+@media only screen and (max-device-width: 1023px) {
+    .btnheader{
+        display: none;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 3em;
+        text-align: center;
+
+        background-color: whitesmoke;
+    }
+    .dropdown{
+        display: block;
+        float: inline-end;
+    }
+    .main{
+        overflow: hidden;
+    }
+    #id
+    {
+        height: 100px;
+        width: 10%; 
+    }
+    #img,
+    #descri,
+    #checkout
+    {
+        height: 100px;
+        width: 100%; 
+    }
+    #enviar,
+    #limpar,
+    #edt,
+    #atualizar,
+    #excluir,
+    #consultarid,
+    #limpar
+    {
+        height: 70px;
+        width: 100px;
+    }
+    #consultageral{
+        height: 70px;
+        width: 100%;
+    }
+    .queryArea{
+      margin-top: 10em;
+      border: none;
+      height: 10%;
+    }
+    .areabtn{
+        display: flex;
+        flex-direction: column;
+    }
+  
+
+}
 @media (max-device-width:640px) {
     body{
         height: 100%;
