@@ -1,10 +1,10 @@
 ﻿------desafio 1
 
-link de resolução de problema
+links de resolução de problema
 de responsividade em dispositivos móveis:
 
 https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
-
+https://globocom.github.io/bootstrap/scaffolding.html
 
 
 ------desafio 2
@@ -12,3 +12,12 @@ https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 link de apoio a resolução do preoblema:
 
 https://stackoverflow.com/questions/37494463/heroku-pgpush-psql-fatal-password-authentication-failed-for-user
+
+
+------desafio 3
+
+planejamento de responsividade
+
+tópicos
+    -sequência de dispositivos
+    -tamanhos em pixels de dispositivos
