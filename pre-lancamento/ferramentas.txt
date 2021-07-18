@@ -1,4 +1,4 @@
-design/ui/ux:
+﻿design/ui/ux:
 	https://themes.getbootstrap.com/
 	https://dribbble.com/shots/3829284-Dipnet-login-page
 	https://colorlib.com/wp/html5-and-css3-login-forms/
@@ -7,6 +7,7 @@ design/ui/ux:
 	https://themeforest.net/category/site-templates
 	https://pt.squarespace.com/templates/navegar/topica/designs-populares/tipo/associacoes&Loja-on-line
 	https://www.canva.com/pt_br/
+	https://color.adobe.com/pt/explore/
 
 model choiced:
 	store:

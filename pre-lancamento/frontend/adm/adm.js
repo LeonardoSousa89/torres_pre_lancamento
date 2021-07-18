@@ -1,6 +1,9 @@
 //https://auth-deploy-test.netlify.app/
 //https://adm-deploy-test.netlify.app
 //http://127.0.0.1:5500/pre-lancamento/frontend/auth/index.html
+//https://www.canva.com/design/DAEkhAs-mhc/UNgUjemLLVurJTLaVYry9Q/view?utm_content=DAEkhAs-mhc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#5
+//fonte do logo: Mokoto glitch 1
+//cor do logo: #94dd26
 function sair() {
     document.location.href = '../auth/index.html'
 }

@@ -1,0 +1,6 @@
+a administração pode ter acesso a loja,
+porém a loja não pode ter acesso a administração.
+
+os arquivos de produção serão, diferentes dos atuais de teste,
+é o mpodulo de autenticação que somente terá acesso a administração,
+sem deploy em url, para não permitir a exposição em rede.
