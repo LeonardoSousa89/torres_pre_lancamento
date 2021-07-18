@@ -1,5 +1,5 @@
 //https://auth-deploy-test.netlify.app/
-//https://adm-auth-test.netlify.app/
+//https://adm-deploy-test.netlify.app
 //http://127.0.0.1:5500/pre-lancamento/frontend/auth/index.html
 function sair() {
     document.location.href = '../auth/index.html'
