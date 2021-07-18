@@ -6,6 +6,7 @@ design/ui/ux:
 	https://pixabay.com/pt/
 	https://themeforest.net/category/site-templates
 	https://pt.squarespace.com/templates/navegar/topica/designs-populares/tipo/associacoes&Loja-on-line
+	https://www.canva.com/pt_br/
 
 model choiced:
 	store:
@@ -15,9 +16,12 @@ model choiced:
 		https://colorlib.com/wp/template/login-form-v3/
 
 
-Catálogo dos Padrões de Projeto
+Catï¿½logo dos Padrï¿½es de Projeto
 -------------------------------
 https://refactoring.guru/pt-br/design-patterns/catalog
+
+ferramentas de otimizaÃ§Ã£o de cÃ³digo:
+https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 
 devOps/infra:
 
@@ -29,3 +33,7 @@ https://www.heroku.com/
 netlify
 -------
 https://www.netlify.com/
+
+github
+------
+https://github.com/LeonardoSousa89
